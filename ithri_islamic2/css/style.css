@@ -1,0 +1,284 @@
+/* --------- Stylesheets  #B9D3EE   incorporation --------- */
+@import url("content.css");
+@import url("forms.css");
+@import url("templates.css");
+@import url("blocks.css");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+/* --------- Layout --------- */
+html {
+	
+	font-family:  Segoe UI,Tahoma,Arial,Helvetica,sans-serif;
+	line-height: normal;
+	margin: 0;
+	padding: 0;
+	background:  url("../img/b1.gif")  fixed ;
+		
+		
+}
+body {
+	font-family: Segoe UI,Tahoma,Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	line-height: normal;
+	unicode-bidi: embed;
+	width: 920px;
+	margin: 0 auto;
+	background: #F0FFF0 ;
+    
+	
+}
+
+
+
+#xo-canvas {
+	
+	width: 920px;
+	margin: 0 auto;
+}
+#xo-canvas-content {
+   
+}
+
+	
+}
+#xo-page {
+	padding-top: 1px;   background: transparent;
+	
+	
+}
+/* --------- Header --------- */
+#xo-header {
+	
+	height: 140px;
+	background: url("../img/is.png") no-repeat;
+}
+
+
+/* --- Logo --- */
+#xo-header img.logo {
+	float:	right; 
+	padding: 9px 33px 0 0;
+	padding-right:40px;
+	padding-top:25px;
+} 
+
+/* --------- Navigation menu --------- */
+
+
+
+#menu{
+	width:90%;
+	margin:0px auto;
+	position:relative;
+}
+#menu ul{
+	list-style:none;
+	
+}
+#menu li{
+	display:block;
+	float:right;
+	
+}
+#menu li a{
+	background:#749b10 url("../img/menu_bg.gif") repeat-x;
+	border:2px solid #80a225;
+	margin:0 1px;
+	padding:15px 15px 15px 15px;
+	display:block;
+	float:left;
+	color:#fff;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-family:Segoe UI,Tahoma,Arial,Helvetica,sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	height: 50px;
+	
+}
+#menu li a span{
+	color:#52651f;
+	font-size:12px;
+	text-transform:lowercase;
+	font-family:Segoe UI,Tahoma,Arial,Helvetica,sans-serif;
+	font-weight:normal;
+}
+#menu li a:hover{
+	background:#e46825 url("../img/menu_hover.gif") repeat-x;
+	border:2px solid #B8860B;
+	text-decoration:none;
+}
+#menu li a:hover span{
+	color:#ffd9c7;
+}
+.current{
+	background:#e46825 url("../img/menu_hover.gif") repeat-x;
+	border:2px solid #B8860B;
+	margin:0 1px;
+	padding:15px 15px 15px 15px;
+	display:block;
+	float:right;
+	color:#fff;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-family:Segoe UI,Tahoma,Arial,Helvetica,sans-serif;
+	font-size:16px;
+	cursor:pointer;
+	font-weight:bold;
+	height: 50px;
+}
+.current span{
+	color:#ffd9c7;
+	font-size:12px;
+	text-transform:lowercase;
+	font-family:Segoe UI,Tahoma,Arial,Helvetica,sans-serif;
+	font-weight:normal;
+}
+
+	
+/*============== Styles pour l'include userbar.html =================*/
+
+
+.xo-userbar form {
+	display:							inline;
+	padding:							0px;
+}
+.xo-userbar button {
+	margin: 							0px -3px;
+	border:							0px none;
+	padding:							0px;
+	background:						transparent none;
+}
+.xo-userbar button img {
+	width: 							20px;
+	height: 						20px;
+}
+.xo-userbar img {
+	width: 							20px;
+	height: 						20px;
+}
+.xo-userbar input {
+	color: 							black;
+	font-size: 						1.2em;
+	background-color: 			inherit;
+}
+
+.xo-userbar a {
+	color: 							#FF4500;
+	
+	text-decoration: 				none;
+	background-color: 			inherit;
+	
+	font-weight:					bold;
+}
+.xo-uname {
+	color: 							#87af7b;
+	font-size:						1.6em;
+	font-weight:					bold;
+	background: 					inherit;
+}
+
+
+.xo-userbar{
+	height: 32px;
+	text-align: right;
+	float: left;
+	padding: 15px 0 0 20px;
+	padding-left:80px;
+	padding-top:50px;
+}
+
+
+
+/* --------- Content module page --------- */
+#xo-content {
+  padding : 8px;
+  text-align : justify;
+    
+}
+
+/* --------- Footer --------- */
+#xo-footer {  
+	
+	
+	background: url("../img/footer.png") no-repeat center bottom;
+	width: 920px;
+	height:90px;
+	
+	
+}
+
+
+.xo-foottext{
+	font-size: 1.1em;
+	color: #000;
+	padding: 0px 30px;
+	vertical-align: middle;
+	text-align: center;	
+	
+	padding-top:33px;
+}
+.xo-foottext a{
+	color: #000;
+	text-decoration: none;
+}
+.xo-foottext a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+
+
+
+/* --------- Block main menu --------- */
+#mainmenu {
+	padding-bottom:20px;
+	text-align: center;
+	
+}
+#mainmenu a {
+  display: block;
+  margin: 0;
+  padding: 4px;
+  font-size : 1em;
+  font-weight:					bold;
+  color:#363636;
+	
+}
+#mainmenu a:hover {color:#B8860B;}
+
+}
+
+
+
+}
+#mainmenu a.menuSub {
+  padding-right: 20px; color:#575757 ;
+  font-size: .9em;
+  font-weight:					bold;
+}
+#mainmenu a.menuSub:hover {}
+
+/* --------- Block user menu --------- */
+#usermenu {
+font-size: .9em; 
+padding-right: 15px;
+text-align: center;
+padding-bottom:20px;
+}
+#usermenu a {
+  display: block;
+  margin: 0; 
+  padding: 4px;
+}
+#usermenu a:hover {color:#009ACD}
+
+
+.rss { float: right; padding: 5px 5px 0 0;}
+.rss a:hover {	text-decoration: none;}
+
+
+
+

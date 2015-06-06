@@ -1,0 +1,109 @@
+/* --------- Left columns --------- */
+#xo-canvas-leftcolumn { 
+	padding: 10px;
+	width : 170px;
+	padding-top:1px;
+	padding-right: 1px;
+	font-family: Segoe UI,Tahoma,Arial,Helvetica,sans-serif;
+    background: 				url("../img/content.gif") repeat-y; 
+}
+
+#xo-canvas-leftcolumn h3.xo-blocktitle {
+    background: 				url("../img/right.gif") repeat-x; 
+    color: #fff; 
+    font-size: 14px;
+    margin-right:  6px ;
+	padding-top: 1px;  
+	text-align: center;
+	font-weight: bold;  
+	height:20px
+	
+    
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent { 
+	
+	padding-right: 8px;
+	padding-bottom: 15px;
+	padding-right:2px;
+}
+
+
+
+/* --------- Right columns --------- */
+#xo-canvas-rightcolumn {
+	padding: 10px;
+	width : 170px;
+	padding-top:1px;
+	padding-right: 1px;
+	font-family: Segoe UI,Tahoma,Arial,Helvetica,sans-serif;
+	background: 				url("../img/rr.gif") repeat-y; 
+}
+#xo-canvas-rightcolumn h3.xo-blocktitle {
+    background: 				url("../img/left.gif") repeat-x; 
+    padding-top:1px;
+	color: #458B00; 
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	margin-right:  4px ;
+	height:20px
+	
+}
+#xo-canvas-rightcolumn .xo-blockcontent { 
+	color:#B8860B;
+	padding-right: 8px;
+	padding-bottom: 15px;
+	padding-right:2px;
+	
+}
+
+/* --------- Center blocks --------- */
+#xo-page .xo-block {
+  margin: 5px;
+ 
+
+ 
+ 
+}
+#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-topcenterblocks h3.xo-blocktitle, #xo-bottomcenterblocks h3.xo-blocktitle {
+  margin: 5px;
+  padding-right: 20px;
+  color :#fff;
+  font-weight: bold;
+  background: 			#00BFFF	url("../img/right.gif") repeat-x;
+   
+  
+}
+#xo-topcenterblocks .xo-blockcontent, #xo-bottomcenterblocks .xo-blockcontent {
+  
+  margin-bottom: 10px;
+  line-height: 1.3em;
+  text-align: justify;
+  
+}
+#xo-topleftblocks, #xo-bottomleftblocks, #xo-toprightblocks, #xo-bottomrightblocks {width : 49.5%;  }
+#xo-topleftblocks h3.xo-blocktitle, #xo-bottomleftblocks h3.xo-blocktitle,
+#xo-toprightblocks h3.xo-blocktitle, #xo-bottomrightblocks h3.xo-blocktitle {
+  margin: 5px;
+  padding-right: 10px;
+  color: #fff;
+  font-weight: bold;
+  background: 			#00BFFF	url("../img/right.gif") repeat-x;
+  padding-right: 20px;
+  font-family: Segoe UI,Tahoma,Arial,Helvetica,sans-serif; 
+  
+}
+#xo-topleftblocks .xo-blockcontent, #xo-toprightblocks .xo-blockcontent,
+#xo-bottomleftblocks .xo-blockcontent, #xo-bottomrightblocks .xo-blockcontent {
+  margin-bottom: 2px;
+  font-family: Segoe UI,Tahoma,Arial,Helvetica,sans-serif;
+  line-height: 1.3em;
+  text-align: justify;  
+}
+
+#xo-topleftblocks{border-right: 1px solid  ;  }
+ #xo-bottomrightblocks {border-left: 1px solid  ;}
+
+

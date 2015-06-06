@@ -1,0 +1,41 @@
+
+<div dir="rtl" id="xo-header" class="<{$xoops_dirname}>">
+	<!-- Logo -->
+	<a href="<{xoAppUrl }>">
+	<img src="<{xoImgUrl img/logo.gif}>" class="logo" alt="<{$xoops_pagetitle}>" title="<{$xoops_pagetitle}>" /></a>
+		<div class="xo-userbar">
+		<{if !$xoops_isuser}>
+			<!-- menu en mode anonyme -->
+			<form method="post" action="<{xoAppUrl /user.php op=login}>">
+				<{$smarty.const._LOGIN}>&nbsp;
+				<input name="uname" type="text" size="12"/>&nbsp;&nbsp;<input name="pass" type="password" size="12"/>
+				<input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" />
+				<button type="submit"><img src="<{xoImgUrl /img/home.png}>" alt="<{$smarty.const._LOGIN}>" /></button>
+			</form>&nbsp;&nbsp;
+			<a href="<{xoAppUrl /register.php}>" class="register">«‘ —ﬂ «·¬‰</a>
+		<{else}>
+		<!-- menu en mode enregistrÈ -->
+		<a href="<{xoAppUrl /user.php}>" alt="»Ì«‰« Ì" title="»Ì«‰« Ì"></a>
+        <!-- nous sommes le <{$smarty.now|date_format:"%d %B %Y"}> &nbsp;:  -->
+			<{xoInboxCount assign=pmcount}>
+			<a href="<{xoAppUrl www/viewpmsg.php}>">
+			<!-- pour ma messagerie -->
+			<{if $pmcount}><!-- si j'ai des messages --><img src="<{xoImgUrl img/inbox-full.png}>" alt="(<{$pmcount}>) Messages" title="⁄‰œﬂ <{$pmcount}> —”«∆· €Ì— „ﬁ—Ê¡…" />
+			<{else}>
+			<!-- si je n'ai pas de message -->
+			<img src="<{xoImgUrl img/inbox.png}>" alt="BoÓte de rÈception" title="› Õ ’‰œÊﬁ «·»—Ìœ" /><{/if}></a>
+			<!-- fin de ma messagerie -->
+			<a href="<{xoAppUrl /notifications.php}>"><img src="<{xoImgUrl img/note_view.png}>" alt=" »·Ì€« " title="«·«ÿ·«⁄ ⁄·Ï «· »·Ì€« " /></a>				
+			<a href="<{xoAppUrl /user.php}>"><img src="<{xoImgUrl img/profile.png}>" alt="»Ì«‰« Ì" title=" ⁄œÌ· «·»Ì«‰« " /></a>
+			<a href="<{xoAppUrl /search.php}>"><img src="<{xoImgUrl img/find.png}>" alt="»ÕÀ ›Ì «·„Êﬁ⁄" title="»ÕÀ ›Ì «·„Êﬁ⁄" /></a>
+			<{if $xoops_isadmin}>
+			<!-- lien supplÈmentaire si j'ai des droits d'administration de module -->
+			<a href="<{xoAppUrl /admin.php}>"><img src="<{xoImgUrl img/configuration.png}>" alt="≈œ«—…" title="⁄—÷ ·ÊÕ… «·≈œ«—…" /></a>
+			<!-- fin du lien supplÈmentaire -->
+			<{/if}>
+			<a href="<{xoAppUrl /user.php op=logout}>"><img src="<{xoImgUrl img/exit.png}>" alt=" ”ÃÌ· «·Œ—ÊÃ" title=" ”ÃÌ· «·Œ—ÊÃ" /></a>
+		<{/if}>
+		</div>
+	
+	<div class="<{$xoops_dirname}"></div>
+</div>
